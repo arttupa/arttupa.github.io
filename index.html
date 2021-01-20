@@ -4,32 +4,139 @@
 
     <meta charset="UTF-8">
     <meta name="author" content="Arttu Korhonen"> 
-    <meta name="description" content="Eka oma kotisivut">  
+    <meta name="description" content="Eka oma kotisivut">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artun ekat kotisivut</title>
     <style>
-        div {
-            
+
+        body{
+            margin: 0;
+            padding: 0;
+            background: whitesmoke;
         }
 
-        #asettelu {
+        nav{
+           width: 100%;
+           background: whitesmoke;
+           overflow: auto;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0 0 0 150px;
+            list-style: none;
+        }
+
+        li {
+            float: left;
+        }
+
+        .logo img {
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 10px;
+        
+        }
+
+        nav a {
+          width: 100px;
+          display: block;
+          padding:  20px 15px;
+          text-decoration: none;
+          font-family: 'Courier New', Courier, monospace;
+          color: black;
+          text-align: center;
+
+        }
+
+        nav a:hover {
+            background: rgb(0, 204, 255);
+            transition: 0.5s;
+            text-transform: uppercase;
+
+        }
+            #asettelu {
             width: auto;
             margin: 0 auto;
-            border: 4px solid lightgray;
-        }
-        #ylapalkki {
-            background-color:white;
-            border: 4px solid black;
-            text-align: center;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-        }
+            border: 0px solid white;
+        } 
 
-        #navigaatio {
+ /*       #ylapalkki {
+            background-color:white;
+            border: 4px solid white;
+            text-align: left;
+           
+        }*/
+
+        #kuva1 {
             height: 100px;
             background-image: url("media/kalajoki2.png");
             background-repeat: no-repeat;
             background-size: 100%;
         }
+
+        ul.topnav1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+ul.topnav1 li {
+    float: left;
+    }
+
+ul.topnav1 li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:'Courier New', Courier, monospace;
+}
+
+/*ul.topnav li a:hover:not(.active) {background-color: rgb(0, 204, 255);}*/
+
+/*ul.topnav li a.active {background-color:  rgb(95, 223, 255);}*/
+
+ul.topnav1 li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav1 li.right, 
+  ul.topnav1 li {float: none;}
+}
+
+
+        ul.topnav2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+ul.topnav2 li {float: left;}
+
+ul.topnav2 li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:'Courier New', Courier, monospace;
+}
+
+ul.topnav2 li a:hover {background-color: rgb(0, 204, 255);}
+
+/*ul.topnav2 li a.active {background-color:  rgb(95, 223, 255);}*/
+
+ul.topnav2 li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav2 li.right, 
+  ul.topnav2 li {float: none;}
+}
 
         #container1 {
             display: flex;
@@ -37,42 +144,41 @@
         }
 
         #vasen {
-            width: 33%;
-            background-color: white;
-            border: 4px solid lightgray;
-            padding: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        #keskimmäinen {
-            width: 33%;
-            background-color: white;
-            border: 4px solid lightgray;
-            padding: 10px;
+            width: 50%;
+            background-color: white; 
+            margin: 20px;
+            border: 0px solid lightgray;
+            padding: 20px;
+            box-sizing: border-box;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
         #oikea {
-            width: 33%;
-            background-color:white;
-            border: 4px solid lightgray;
-            padding: 10px;
+            width: 50%;
+            background-color: white;
+            border: 0px solid lightgray;
+            margin: 20px;
+            padding: 20px;
+            box-sizing: border-box;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
-
-        #linkkipalkki {
-            background-color:white;
-            border: 4px solid black;
-            text-align: center;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-        a {
-            text-decoration: none;
-            color: black;
-        }
-        
-
+    
         #container2 {
+            display: flex;
+            flex-wrap: nowrap;         
+        }
+        #alakeski {
+            width: 50%;
+            background-color:white;
+            border: 0px solid lightgray;
+            padding: 20px;
+            margin: 20px;
+            margin-left: 25%;
+            margin-right: 25%;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #container3 {
             display: flex;
             flex-wrap: nowrap;         
         }
@@ -98,15 +204,50 @@
         h2 {
             text-align: center;
         }
+
+
+
     </style>
 </head>
 
 <body>
     <div id="asettelu">
-        <div id="ylapalkki">
-            <h1 style="font-family:'Courier New', Courier, monospace">Artun ekat ite tehyt kotisivut</h1>
+      <!-- <div id="ylapalkki">
+            <h1 style="font-family:'Courier New', Courier, monospace">Arttu News</h1>
+        </div>-->
+        
+        <div class ="logo"><a href ="#"><img src ="media/testilogo1.png"></a>
         </div>
-        <div id="navigaatio"></div>
+        <nav>
+                <ul>
+                    <li><a href ="#"> Home</a></li>
+                    <li><a href ="#"> a</a></li>
+                    <li><a href ="#"> b</a></li>
+                    <li><a href ="#"> c</a></li>
+                    <li><a href ="#"> d</a></li>
+                    <li><a href ="#"> e</a></li>
+                    </li>
+                </ul>
+
+        </nav>
+
+        <div><ul class="topnav1">
+            <li><a href="#home">Juu</a></li>
+            <li><a href="#news">About Me</a></li>
+            <li><a href="#contact">CV</a></li>
+            <li><a href="#contact">UI/UX Portfolio</a></li>
+            <li class="right"><a href="#about">About</a></li>
+          </ul>
+        </div> 
+        <div><ul class="topnav2">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">About Me</a></li>
+            <li><a href="#contact">CV</a></li>
+            <li><a href="#contact">UI/UX Portfolio</a></li>
+            <li class="right"><a href="#about">About</a></li>
+          </ul>
+        </div>
+        <div id="kuva1"></div>
         <div id="container1">
             <div id="vasen">
                 <h2>Meikäläinen</h2>
@@ -116,7 +257,7 @@
                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum tincidunt fringilla. Phasellus nisi lectus, euismod at ullamcorper id, pharetra nec augue. Vestibulum malesuada placerat velit, vitae mollis libero maximus eget. Donec ultricies leo sit amet quam suscipit congue. Praesent venenatis ultricies magna quis dictum. Duis commodo erat sit amet quam ornare, eu eleifend libero commodo. Aenean sollicitudin id ex ac luctus. Mauris sollicitudin elit eu lorem iaculis, sed placerat est posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum quis augue id dictum. Aenean sit amet ornare ligula. Suspendisse commodo, erat non lacinia blandit, tellus diam feugiat felis, quis consectetur metus nunc a ipsum. Maecenas id dolor nisl. Praesent id massa non est sollicitudin hendrerit euismod vel nibh.
                 </p>     
             </div>
-            <div id="keskimmäinen">
+            <div id="oikea">
                 <h2>Osaamiseni</h2>
                 
                 <p>Osaan kaikenlaista. Olen erikoistunut keskinkertaisuuteen.</p>
@@ -127,7 +268,10 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum tincidunt fringilla. Phasellus nisi lectus, euismod at ullamcorper id, pharetra nec augue. Vestibulum malesuada placerat velit, vitae mollis libero maximus eget. Donec ultricies leo sit amet quam suscipit congue. Praesent venenatis ultricies magna quis dictum. Duis commodo erat sit amet quam ornare, eu eleifend libero commodo. Aenean sollicitudin id ex ac luctus. Mauris sollicitudin elit eu lorem iaculis, sed placerat est posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum quis augue id dictum. Aenean sit amet ornare ligula. Suspendisse commodo, erat non lacinia blandit, tellus diam feugiat felis, quis consectetur metus nunc a ipsum. Maecenas id dolor nisl. Praesent id massa non est sollicitudin hendrerit euismod vel nibh.
              </p>  
             </div>
-            <div id="oikea">
+
+        </div>
+        <div id="container2">
+          <div id="alakeski">
                 <h2>Harrastukseni</h2>
                 <p>Harrastukseni on kokkaaminen ja syöminen. Lisäksi välttelen aktiivisesti
                 kaikkea hyödyllistä toimintaa. Erehdyn usein lukemaan - paljon.
@@ -141,12 +285,7 @@
                 
             </div>
         </div>
-    <a href="http://arttujkorhonen.com/">
-        <div id="linkkipalkki">
-             <h3 style="font-family:'Courier New', Courier, monospace">Jos haluat tietää minusta oikeasti jotain, klikkaa tästä ;)</h3> 
-        </div>  
-    </a>
-        <div id="container2">
+        <div id="container3">
             <div id="alapalkki1">
                 <div id="alateksti">
                     <p style="font-family:'Courier New', Courier, monospace">
