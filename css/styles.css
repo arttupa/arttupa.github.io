@@ -6,6 +6,7 @@ body{
 }
 
     /*tähän päättyy ylin yläpalkki*/
+
 /* Mikä tämä on??? */
 #asettelu {
     width: auto;
@@ -30,11 +31,11 @@ li {
 }
 
  .logo img {
-    position: absolute;
+    position: initial;
     margin-top: 0px;
     margin-left: 10px;
     text-align: center;
-    float: right;
+    float: left;
 }
 
 nav a {
@@ -54,10 +55,10 @@ nav a:hover {
     text-transform: uppercase;
 }
 
-    @media screen and (max-width: 600px) {
+ /*   @media screen and (max-width: 600px) {
         ul, li {float: none;}
         }        
-                                        
+  */                                      
                                
 /*Tästä alkaa alempi yläpalkki*/
 ul.topnav2 {
@@ -103,51 +104,6 @@ ul.topnav2 li {float: none;}
 }
  
 
- /*
-#container1 {
-    display: flex;
-    flex-wrap: nowrap;         
-}
-
-#vasen {
-    width: 50%;
-    background-color: white; 
-    margin: 20px;
-    border: 0px solid lightgray;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#oikea {
-    width: 50%;
-    background-color: white;
-    border: 0px solid lightgray;
-    margin: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-*/
-
-/*
-#container2 {
-    display: flex;
-    flex-wrap: nowrap;         
-}
-#alakeski {
-    width: 50%;
-    background-color:white;
-    border: 0px solid lightgray;
-    padding: 20px;
-    margin: 20px;
-    margin-left: 25%;
-    margin-right: 25%;
-    box-sizing: border-box;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-*/
     /* tästä alkaa joustavien kolunmien kokeilu */
     #containercolumn1 {
     box-sizing: border-box;
@@ -161,7 +117,7 @@ ul.topnav2 li {float: none;}
 
     /* Create four equal columns */
     .column {
-    flex: 25%;
+    flex: 33%;
     padding: 20px;
     border-radius: 3px;
     /*Tämä on lisätty jälkikäteen. Pöllitty alkuperäisistä */
@@ -174,38 +130,29 @@ ul.topnav2 li {float: none;}
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 600px) {
     .column {
-        flex: 40%;
+        flex: 100%;
     }
     }
 
     @media screen and (max-width: 600px) {
     .row {
-        flex-direction: column;
+        flex-direction: 50%;
     }
     }
 
-#container3 {
+#yhteystiedot {
+    box-sizing: border-box;
     display: flex;
-    flex-wrap: nowrap;         
+    flex-wrap: wrap; 
+    background-color: #770000;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
 
-#alapalkki1 {
+.yhteystietokolumni {
     width: 33%;
-    background-color: #770000;
-    padding: 20px;
-}
-
-#alapalkki2 {
-    width: 33%;
-    background-color: #770000;
-    padding: 20px;
-}
-
-#alapalkki3 {
-    width: 33%;
-    background-color: #770000;
     padding: 20px;
 }
 
