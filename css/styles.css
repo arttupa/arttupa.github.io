@@ -31,12 +31,27 @@ li {
 }
 
  .logo img {
+    content:url("../media/Arttu Korhonen.png");
+    background: rgb(4, 184, 184);
     position: initial;
     margin-top: 0px;
     margin-left: 10px;
     text-align: center;
     float: left;
-}
+    /*htmllässä on img src, mutta css;sä tämä: */
+    
+ }
+
+    @media screen and (max-width: 700px) {
+    .logo img {
+    content:url("../media/Arttu K2.png");
+    position: initial;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    float: left;
+    }
+    }
 
 nav a {
   width: 40px;
@@ -89,11 +104,13 @@ background-color: rgb(0, 204, 255);
 ul.topnav2 li.right {
 float: right;
 }
-
+/*
 @media screen and (max-width: 600px) {
 ul.topnav2 li.right, 
 ul.topnav2 li {float: none;}
-}                                              
+} 
+
+*/
  /*Tähän päättyy alempi yläpalkki*/
 
  #kuva1 {
@@ -120,14 +137,6 @@ ul.topnav2 li {float: none;}
     flex: 33%;
     padding: 20px;
     border-radius: 3px;
-    /*Tämä on lisätty jälkikäteen. Pöllitty alkuperäisistä */
-        width: 50%;
-        background-color: white; 
-        margin: 10px;
-        border: 0px solid lightgray;
-        padding: 20px;
-        box-sizing: border-box;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     @media screen and (max-width: 600px) {
@@ -141,21 +150,45 @@ ul.topnav2 li {float: none;}
         flex-direction: 50%;
     }
     }
-
+/*Yhteystiedot alkaa tästä*/
 #yhteystiedot {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap; 
-    background-color: #770000;
+    background-color: #000000;
     font-family: 'Courier New', Courier, monospace;
     color: white;
 }
 
 .yhteystietokolumni {
-    width: 33%;
+    width: 25%;
     padding: 20px;
+    background: #770000;
 }
 
 h2 {                                /* kolumnien otsikot */
     text-align: center;
 }
+@media screen and (max-width: 800px) {
+    .yhteystietokolumni {
+        flex: 50%; background: black;
+    }
+}
+
+   /* 
+    #kokeilu {
+        width: 140px;
+        height: 100px;
+        background: rgb(44, 44, 44);
+        transition: width 1s, height 1s;
+        color: white;
+        padding: 20px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      
+      #kokeilu:hover {
+        width: 3000px;
+        height: 300px;
+      }
+    */
+    
