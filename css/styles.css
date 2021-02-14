@@ -2,17 +2,16 @@
 body{
     margin: 0;
     padding: 0;
+    margin-left: 300;
+    margin-right: 300;
     background: whitesmoke;
 }
-
-    /*tähän päättyy ylin yläpalkki*/
-
-/* Mikä tämä on??? */
-#asettelu {
-    width: auto;
-    margin: 0 auto;
-    border: 0px solid red;
-} 
+@media only screen and (max-width: 1400px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
 /*Tästä alkaa ylin yläpalkki logolla */  
 nav{                              
    width: 100%;
@@ -29,24 +28,23 @@ ul {
 li {
     float: right;
 }
-
+/* Jutut ennen sivun kutistumista*/
  .logo img {
     content:url("../media/Arttu Korhonen.png");
     background: rgb(4, 184, 184);
     position: initial;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-left: 10px;
     text-align: center;
     float: left;
     /*htmllässä on img src, mutta css;sä tämä: */
     
  }
-
+/* Nämä tapahtuu kun sivu on kutistunut*/
     @media screen and (max-width: 700px) {
     .logo img {
     content:url("../media/Arttu K2.png");
-    position: initial;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 10px;
     text-align: center;
     float: left;
@@ -54,11 +52,9 @@ li {
     }
 
 nav a {
-  width: 40px;
+  width: 10px;
   display: block;
-  padding:  20px 15px;
-  text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
+  padding:  0px 20px;
   color: white;
   text-align: center;
 
@@ -69,11 +65,7 @@ nav a:hover {
     transition: 0.5s;
     text-transform: uppercase;
 }
-
- /*   @media screen and (max-width: 600px) {
-        ul, li {float: none;}
-        }        
-  */                                      
+                                    
                                
 /*Tästä alkaa alempi yläpalkki*/
 ul.topnav2 {
@@ -104,13 +96,32 @@ background-color: rgb(0, 204, 255);
 ul.topnav2 li.right {
 float: right;
 }
-/*
-@media screen and (max-width: 600px) {
-ul.topnav2 li.right, 
-ul.topnav2 li {float: none;}
-} 
 
-*/
+/* fa on instagram ja linkedin linkit logoineen */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 10px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+.fa-instagram {
+    background:white;
+    color: black;
+  }
+
+  .fa-linkedin {
+    background: black;
+    color: white;
+  }
+
  /*Tähän päättyy alempi yläpalkki*/
 
  #kuva1 {
@@ -137,6 +148,7 @@ ul.topnav2 li {float: none;}
     flex: 33%;
     padding: 20px;
     border-radius: 3px;
+    background-color: white;
     }
 
     @media screen and (max-width: 600px) {
@@ -192,3 +204,4 @@ h2 {                                /* kolumnien otsikot */
       }
     */
     
+    #more {display: none;}

@@ -6,21 +6,22 @@
     <meta name="author" content="Arttu Korhonen"> 
     <meta name="description" content="Ekat omat kotisivut">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css" />
     <title>Artun ekat kotisivut</title>
-
+ 
 </head>
 
 <body>
+  <script src="JavaScript/javaScript.js"></script>
     <div id="asettelu">
-
+      
         <nav class ="logo">
-            <!--<img src ="media/testilogo1.png"></a>-->
+            <!--/* fa on instagram ja linkedin linkit logoineen */-->
             <img/>
                 <ul>
-                    <li><a href ="#"> a</a></li>
-                    <li><a href ="#"> b</a></li>
-                    <li><a href ="#"> c</a></li>
+                    <li><a href ="#" class="fa fa-instagram"><a><li>
+                    <li><a href ="#" class="fa fa-linkedin"></a></li>
                 </ul>
 
         </nav>
@@ -46,11 +47,14 @@
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                       Quae accusantium quas nisi sequi neque totam consequatur 
                       recusandae beatae. Omnis enim laboriosam amet, excepturi 
-                      dolores deleniti totam. Eius saepe consectetur voluptates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum tincidunt fringilla. Phasellus nisi lectus, euismod at ullamcorper id, pharetra nec augue. Vestibulum malesuada placerat velit, vitae mollis libero maximus eget. Donec ultricies leo sit amet quam suscipit congue. Praesent venenatis ultricies magna quis dictum. Duis commodo erat sit amet quam ornare, eu eleifend libero commodo. Aenean sollicitudin id ex ac luctus. Mauris sollicitudin elit eu lorem iaculis, sed placerat est posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum quis augue id dictum. Aenean sit amet ornare ligula. Suspendisse commodo, erat non lacinia blandit, tellus diam feugiat felis, quis consectetur metus nunc a ipsum. Maecenas id dolor nisl. Praesent id massa non est sollicitudin hendrerit euismod vel nibh. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                      dolores deleniti totam. Eius saepe consectetur voluptates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum tincidunt fringilla. Phasellus nisi lectus, euismod at ullamcorper id, pharetra nec Vestibulum malesuada placerat velit, vitae mollis libero maximus eget. Donec ultricies leo sit amet quam suscipit congue. Praesent venenatis ultricies magna quis dictum. Duis commodo erat sit amet quam ornare, eu eleifend libero commodo. Aenean sollicitudin id ex ac luctus. Mauris sollicitudin elit eu lorem iaculis, sed placerat est posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum quis augue id dictum. Aenean sit amet ornare ligula. Suspendisse commodo, erat non lacinia blandit, tellus diam feugiat felis, quis consectetur metus nunc a ipsum. Maecenas id dolor nisl. Praesent id massa non est sollicitudin hendrerit euismod vel nibh. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                       Quae accusantium quas nisi sequi neque totam consequatur 
-                      recusandae beatae. Omnis enim laboriosam amet, excepturi 
+                      recusandae beatae. augue.<span id="dots">...</span>
+                      
+                      <span id="more">Omnis enim laboriosam amet, excepturi 
                       dolores deleniti totam. Eius saepe consectetur voluptates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum tincidunt fringilla. Phasellus nisi lectus, euismod at ullamcorper id, pharetra nec augue. Vestibulum malesuada placerat velit, vitae mollis libero maximus eget. Donec ultricies leo sit amet quam suscipit congue. Praesent venenatis ultricies magna quis dictum. Duis commodo erat sit amet quam ornare, eu eleifend libero commodo. Aenean sollicitudin id ex ac luctus. Mauris sollicitudin elit eu lorem iaculis, sed placerat est posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum quis augue id dictum. Aenean sit amet ornare ligula. Suspendisse commodo, erat non lacinia blandit, tellus diam feugiat felis, quis consectetur metus nunc a ipsum. Maecenas id dolor nisl. Praesent id massa non est sollicitudin hendrerit euismod vel nibh.
-                    </p>
+                      </span></p>
+                      <button onclick="myFunction()" id="myBtn">Read more</button>
                 </div>
                 
                 <div class="column">
@@ -58,10 +62,13 @@
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Quae accusantium quas nisi sequi neque totam consequatur 
                     recusandae beatae. Omnis enim laboriosam amet, excepturi 
-                    dolores deleniti totam. Eius saepe consectetur voluptates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum tincidunt fringilla. Phasellus nisi lectus, euismod at ullamcorper id, pharetra nec augue. Vestibulum malesuada placerat velit, vitae mollis libero maximus eget. Donec ultricies leo sit amet quam suscipit congue. Praesent venenatis ultricies magna quis dictum. Duis commodo erat sit amet quam ornare, eu eleifend libero commodo. Aenean sollicitudin id ex ac luctus. Mauris sollicitudin elit eu lorem iaculis, sed placerat est posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum quis augue id dictum. Aenean sit amet ornare ligula. Suspendisse commodo, erat non lacinia blandit, tellus diam feugiat felis, quis consectetur metus nunc a ipsum. Maecenas id dolor nisl. Praesent id massa non est sollicitudin hendrerit euismod vel nibh. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    dolores deleniti totam. Eius saepe consectetur voluptates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum tincidunt fringilla. Phasellus nisi lectus, euismod at ullamcorper id, pharetra nec augue. Vestibulum malesuada placerat velit, vitae mollis libero maximus eget. Donec ultricies leo sit amet quam suscipit congue. Praesent venenatis ultricies magna quis dictum. Duis commodo erat sit amet quam ornare, eu eleifend libero commodo. Aenean sollicitudin id ex ac luctus. Mauris sollicitudin elit eu lorem iaculis, sed placerat est posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum quis augue id dictum. Aenean sit amet ornare ligula.augue.<span id="dots">...</span>
+                      
+                    <span id="more"> Suspendisse commodo, erat non lacinia blandit, tellus diam feugiat felis, quis consectetur metus nunc a ipsum. Maecenas id dolor nisl. Praesent id massa non est sollicitudin hendrerit euismod vel nibh. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Quae accusantium quas nisi sequi neque totam consequatur 
                     recusandae beatae. Omnis enim laboriosam amet, excepturi 
                     dolores deleniti totam. Eius saepe consectetur voluptates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum tincidunt fringilla. Phasellus nisi lectus, euismod at ullamcorper id, pharetra nec augue. Vestibulum malesuada placerat velit, vitae mollis libero maximus eget. Donec ultricies leo sit amet quam suscipit congue. Praesent venenatis ultricies magna quis dictum. Duis commodo erat sit amet quam ornare, eu eleifend libero commodo. Aenean sollicitudin id ex ac luctus. Mauris sollicitudin elit eu lorem iaculis, sed placerat est posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum quis augue id dictum. Aenean sit amet ornare ligula. Suspendisse commodo, erat non lacinia blandit, tellus diam feugiat felis, quis consectetur metus nunc a ipsum. Maecenas id dolor nisl. Praesent id massa non est sollicitudin hendrerit euismod vel nibh.</p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
                 </div>
                 
                 <div class="column">
