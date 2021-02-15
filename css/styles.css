@@ -1,17 +1,32 @@
 
 body{
-    margin: 0;
     padding: 0;
     margin-left: 300;
     margin-right: 300;
     background: whitesmoke;
 }
+/*Tämä pitää navbarin paikallaan, 
+mutta valitettavasti myös leveimmillään
+on kiinni reunoissa */
+#navbarit {
+    overflow: hidden;
+    position: fixed; 
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-right: 0;
+    margin-left: 0;
+
+}
+/* kun sivua kavennetaan */
 @media only screen and (max-width: 1400px) {
     body {
         margin: 0;
         padding: 0;
     }
 }
+
+
 /*Tästä alkaa ylin yläpalkki logolla */  
 nav{                              
    width: 100%;
@@ -65,8 +80,7 @@ nav a:hover {
     transition: 0.5s;
     text-transform: uppercase;
 }
-                                    
-                               
+                                          
 /*Tästä alkaa alempi yläpalkki*/
 ul.topnav2 {
 list-style-type: none;
@@ -129,6 +143,7 @@ float: right;
     background-image: url("../media/kalajoki2.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    margin-top: 100px;
 }
  
 
@@ -162,6 +177,47 @@ float: right;
         flex-direction: 50%;
     }
     }
+
+    #aurinkolasikuva {
+    content: url("../media/omakuva.png");
+    border-radius: 50%;  
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+    float: left;
+    }
+
+    #aklogo {
+        content: url("../media/aklogokeltainen.png");
+        border-radius: 50%;  
+        width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+        float: left;
+    
+    }
+    #skitta {
+        content: url("../media/skitta.png");
+        border-radius: 50%;  
+        width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+    }
+
+    #arturo1 {
+        content: url("../media/arturo1.jpg");
+        border-radius: 50%;  
+        width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+        float: left;
+     }
+
 /*Yhteystiedot alkaa tästä*/
 #yhteystiedot {
     box-sizing: border-box;
@@ -180,6 +236,7 @@ float: right;
 
 h2 {                                /* kolumnien otsikot */
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 @media screen and (max-width: 800px) {
     .yhteystietokolumni {
@@ -205,3 +262,4 @@ h2 {                                /* kolumnien otsikot */
     */
     
     #more {display: none;}
+    #more2 {display: none;}
